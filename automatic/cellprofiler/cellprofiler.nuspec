@@ -4,22 +4,21 @@
   <metadata>
     <id>cellprofiler</id>
     <version>4.0.5</version>
-    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-automatic-packages/tree/master/automatic/cellprofiler</packageSourceUrl>
-    <owners>University of Basel</owners>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/main/automatic/cellprofiler</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
     <!-- ============================== -->
     <title>CellProfiler</title>
     <authors>Broad Institute</authors>
     <projectUrl>https://cellprofiler.org/releases</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-automatic-packages/master/icons/cellprofiler.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-community-packages/main/icons/cellprofiler.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://cellprofiler.org/releases</projectSourceUrl>
+    <projectSourceUrl>https://github.com/CellProfiler/CellProfiler/</projectSourceUrl>
     <docsUrl>https://github.com/CellProfiler/CellProfiler/wiki</docsUrl>
-    <mailingListUrl>https://cellprofiler.org/releases</mailingListUrl>
-    <bugTrackerUrl>https://cellprofiler.org/releases</bugTrackerUrl>
-    <summary>Designed for biologists!</summary>
-    <tags>cellprofiler admin</tags>
-    <description>The CellProfiler project team is based in the Carpenter Lab  at the Broad Institute of Harvard and MIT. The project was started in 2003 by Anne E. Carpenter and Thouis (Ray) Jones in the Sabatini Laboratory (Whitehead Institute for Biomedical Research) and Golland laboratory (MIT’s CSAIL) and is actively improved and maintained.</description>
-    <releaseNotes>https://github.com/CellProfiler/CellProfiler/releases/</releaseNotes>
+    <bugTrackerUrl>https://github.com/CellProfiler/CellProfiler/issues</bugTrackerUrl>
+    <summary>CellProfiler is a free open-source software designed to enable biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically.</summary>
+    <tags>cellprofiler admin foss</tags>
+    <description></description>
+    <releaseNotes>https://github.com/CellProfiler/CellProfiler/wiki/CellProfiler-release-notes</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
