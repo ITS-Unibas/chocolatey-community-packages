@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cellprofiler</id>
     <version>4.0.5</version>
-    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/main/automatic/cellprofiler</packageSourceUrl>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/cellprofiler</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
     <title>CellProfiler</title>
     <authors>Broad Institute</authors>
     <projectUrl>https://cellprofiler.org/releases</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-community-packages/main/icons/cellprofiler.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-community-packages/master/icons/cellprofiler.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/CellProfiler/CellProfiler/</projectSourceUrl>
     <docsUrl>https://github.com/CellProfiler/CellProfiler/wiki</docsUrl>
@@ -21,7 +21,7 @@
 
 We curate the overwhelming number of computer-vision algorithms to a small number that are robust, powerful, and well-suited to biological problems. We translate computer vision techniques into language familiar to biologists. The software uses a pipeline workflow, with modules that map to biologists’ goals. Once a pipeline is configured, most analyses are fully automated. We focus on components applicable to many biologists’ use cases rather than heavily customized to unique experimental setups. We provide sensible defaults, example pipelines, extensive documentation, and an active Q&A forum to get new users up and running quickly. We enable convenient workflows by making connections with other bioimaging software.
 
-![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@main/automatic/cellprofiler/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/automatic/cellprofiler/screenshot.png)
 ]]></description>
     <releaseNotes>https://github.com/CellProfiler/CellProfiler/wiki/CellProfiler-release-notes</releaseNotes>
   </metadata>
