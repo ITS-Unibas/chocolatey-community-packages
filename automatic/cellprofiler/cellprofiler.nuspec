@@ -10,7 +10,7 @@
     <title>CellProfiler</title>
     <authors>Broad Institute</authors>
     <projectUrl>https://cellprofiler.org/releases</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-community-packages/master/icons/cellprofiler.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/icons/cellprofiler.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/CellProfiler/CellProfiler/</projectSourceUrl>
     <docsUrl>https://github.com/CellProfiler/CellProfiler/wiki</docsUrl>
