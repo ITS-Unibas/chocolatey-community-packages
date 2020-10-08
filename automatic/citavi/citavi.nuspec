@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>citavi</id>
+    <version>6.6</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-automatic-packages/tree/master/automatic/citavi</packageSourceUrl>
+    <owners>University of Basel</owners>
+    <!-- ============================== -->
+    <title>Citavi</title>
+    <authors>Swiss Academic Software</authors>
+    <projectUrl>https://www.citavi.com/de/download</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-automatic-packages/tree/master/icons/citavi.jpg</iconUrl>
+    <licenseUrl>https://www.citavi.com/de/nutzungsvereinbarung</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www1.citavi.com/sub/manual6/en/index.html</docsUrl>
+    <summary>Citavi</summary>
+    <tags>citavi admin citation search</tags>
+    <description>Citavi is a program for reference management and knowledge organization for Microsoft Windows published by Swiss Academic Software in Wädenswil, Switzerland.</description>
+    <releaseNotes>https://www.citavi.com/de/was-ist-neu-in-c6</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

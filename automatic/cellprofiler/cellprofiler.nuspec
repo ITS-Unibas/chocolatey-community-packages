@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cellprofiler</id>
+    <version>4.0.5</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-automatic-packages/tree/master/automatic/cellprofiler</packageSourceUrl>
+    <owners>University of Basel</owners>
+    <!-- ============================== -->
+    <title>CellProfiler</title>
+    <authors>Broad Institute</authors>
+    <projectUrl>https://cellprofiler.org/releases</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/ITS-Unibas/chocolatey-automatic-packages/master/icons/cellprofiler.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://cellprofiler.org/releases</projectSourceUrl>
+    <docsUrl>https://github.com/CellProfiler/CellProfiler/wiki</docsUrl>
+    <mailingListUrl>https://cellprofiler.org/releases</mailingListUrl>
+    <bugTrackerUrl>https://cellprofiler.org/releases</bugTrackerUrl>
+    <summary>Designed for biologists!</summary>
+    <tags>cellprofiler admin</tags>
+    <description>The CellProfiler project team is based in the Carpenter Lab  at the Broad Institute of Harvard and MIT. The project was started in 2003 by Anne E. Carpenter and Thouis (Ray) Jones in the Sabatini Laboratory (Whitehead Institute for Biomedical Research) and Golland laboratory (MIT’s CSAIL) and is actively improved and maintained.</description>
+    <releaseNotes>https://github.com/CellProfiler/CellProfiler/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
