@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>atlassian-companion</id>
+    <version>1.2</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/atlassian-companion</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
+    <!-- ============================== -->
+    <title>Atlassian Companion</title>
+    <authors>Atlassian</authors>
+    <projectUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packagesicons/atlassian-companion.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<projectSourceUrl></projectSourceUrl>-->
+    <docsUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</docsUrl>
+    <!--<mailingListUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</mailingListUrl>-->
+    <!--<bugTrackerUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</bugTrackerUrl>-->
+    <summary>The Atlassian Companion app enables users to edit Confluence files in their preferred desktop application, then save the file back to Confluence automatically.</summary>
+    <tags>atlassian-companion bitbucket atlassian git admin freeware</tags>
+    <description></description>
+    <licenseUrl>https://www.atlassian.com/legal</licenseUrl>
+    <releaseNotes>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
