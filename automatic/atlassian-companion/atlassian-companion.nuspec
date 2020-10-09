@@ -10,7 +10,7 @@
     <title>Atlassian Companion</title>
     <authors>Atlassian</authors>
     <projectUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packagesicons/atlassian-companion.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/icons/atlassian-companion.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<projectSourceUrl></projectSourceUrl>-->
     <docsUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</docsUrl>
