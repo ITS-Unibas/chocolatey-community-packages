@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>polar-flowsync</id>
-    <version>0.0</version>
+    <version>3.0.0.1337</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/polar-flowsync</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
