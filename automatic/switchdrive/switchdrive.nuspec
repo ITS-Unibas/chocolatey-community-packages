@@ -3,13 +3,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>switchdrive</id>
-    <version>2.5</version>
+    <version>2.5.4.1832</version>
     <owners>ITS-Unibas</owners>
     <title>SWITCHdrive</title>
     <authors>SWITCH</authors>
     <projectUrl>https://www.switch.ch/drive/</projectUrl>
     <summary>Store, synchronise, share and edit files quickly and reliably - all in the secure SWITCH cloud.</summary>
-    <description></description>
+    <description><![CDATA[SWITCHdrive offers a secure alternative to commercial cloud storage services. You can find a list or participating Institutions here.
+
+If your institution has subscribed to SWITCHdrive, you can register on https://cloud-id.switch.ch for SWITCHdrive and then login to SWITCHdrive on https://drive.switch.ch
+
+![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@main/automatic/switchdrive/screenshot.jpeg)
+]]></description>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/switchdrive</packageSourceUrl>
     <licenseUrl>http://www.gnu.org/licenses/agpl-3.0-standalone.html</licenseUrl>
     <releaseNotes>https://help.switch.ch/drive/what-is-new-in-switchdrive/</releaseNotes>
