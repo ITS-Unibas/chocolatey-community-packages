@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cellprofiler</id>
-    <version>4.0.5</version>
+    <version>4.0</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/cellprofiler</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
@@ -15,6 +15,7 @@
     <projectSourceUrl>https://github.com/CellProfiler/CellProfiler/</projectSourceUrl>
     <docsUrl>https://github.com/CellProfiler/CellProfiler/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/CellProfiler/CellProfiler/issues</bugTrackerUrl>
+    <licenseURL>https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE</licenseURL>
     <summary>CellProfiler is a free open-source software designed to enable biologists without training in computer vision or programming to quantitatively measure phenotypes from thousands of images automatically.</summary>
     <tags>cellprofiler admin foss</tags>
     <description><![CDATA[CellProfiler is designed to serve biologists as well as bioimage analysts who want a flexible system that is easy to deploy to collaborators who lack computational skills. It is commonly used for small-scale experiments involving a few images but is also routinely run on millions of images using cluster or cloud computing resources at some of the largest pharmaceutical companies and academic screening centers in the world.
