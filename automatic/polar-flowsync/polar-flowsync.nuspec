@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>polar-flowsync</id>
+    <version>0.0</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/polar-flowsync</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
+    <!-- ============================== -->
+    <title>Polar FlowSync</title>
+    <authors>Polar Electro</authors>
+    <copyright>© Polar Electro 2020</copyright>
+    <projectUrl>https://flow.polar.com/start</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/icons/flowsync.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://support.polar.com/en/support/FlowSync/What_are_the_technical_requirements_for_using_Polar_FlowSync_software?utm_source=InAppLink&amp;utm_campaign=InAppLink&amp;utm_medium=in-app</docsUrl>
+    <summary>Download FlowSync to sync all your training sessions and activity
+    data with the Polar Flow web service for more in-depth analysis. With it you
+    can also get updates for your Polar device.</summary>
+    <description><![CDATA[updates for your Polar device.
+
+Polar FlowSync 3 Polar FlowSync application iconis compatible with:
+
+- A300
+- A360
+- A370
+- Grit X
+- Ignite
+- Loop
+- Loop 2
+- Loop Crystal
+- M200
+- M400
+- M430
+- M450
+- M460
+- OH1
+- Unite
+- Vantage M
+- Vantage V
+- V650
+- V800
+
+![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/automatic/polar-flowsync/screenshot.png)
+]]></description>
+    <tags>polar-flowsync polar flowsync sports sportwatch</tags>
+    <licenseUrl>https://www.polar.com/en/legal/terms-of-use</licenseUrl>
+    <releaseNotes>https://support.polar.com/en/updates?product=FlowSync</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
