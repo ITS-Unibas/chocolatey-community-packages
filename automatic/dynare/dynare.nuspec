@@ -10,7 +10,7 @@
     <title>Dynare</title>
     <authors>Dynare</authors>
     <projectUrl>https://www.dynare.org/download/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages/icons/dynare.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/icons/dynare.png</iconUrl>
     <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Dynare is a software platform for handling a wide class of economic models, in particular dynamic stochastic general equilibrium (DSGE) and overlapping generations (OLG) models</summary>
