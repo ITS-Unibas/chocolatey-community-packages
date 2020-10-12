@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ganache</id>
+    <version>2.2</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/ganache</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
+    <!-- ============================== -->
+    <title>Ganache</title>
+    <authors>Truffle Blockchain Group</authors>
+    <projectUrl>https://www.trufflesuite.com/ganache</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/trufflesuite/ganache/develop/static/icons/png/128x128.png</iconUrl>
+    <licenseUrl>https://github.com/trufflesuite/ganache/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/trufflesuite/ganache</projectSourceUrl>
+    <docsUrl>https://www.trufflesuite.com/docs/ganache/overview</docsUrl>
+    <bugTrackerUrl>https://github.com/trufflesuite/ganache/issues</bugTrackerUrl>
+    <summary>Ganache is a personal blockchain for rapid Ethereum and Corda distributed application development.</summary>
+    <tags>ganache admin blockchain etherium corda truffel truffelsuitefoss</tags>
+    <description><![CDATA[![screenshot](https://raw.githubusercontent.com/trufflesuite/ganache/develop/.github/images/ganache_screenshot.jpg)
+]]></description>
+    <releaseNotes>https://github.com/trufflesuite/ganache/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
