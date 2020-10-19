@@ -1,3 +1,5 @@
+# [FlowSync](https://chocolatey.org/packages/FlowSync)
+
 Download FlowSync to sync all your training sessions and activity data with the
 Polar Flow web service for more in-depth analysis. With it you can also get
 updates for your Polar device.

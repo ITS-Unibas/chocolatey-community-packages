@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ilastik</id>
-    <version>1.3.3.3</version>
+    <version>1.3</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/ilastik</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->

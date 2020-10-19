@@ -1,3 +1,5 @@
+# [Citavi](https://chocolatey.org/packages/citavi)
+
 Citavi is a program for reference management and knowledge organization for Microsoft Windows published by Swiss Academic Software in Wädenswil, Switzerland.
 
 ## Features
