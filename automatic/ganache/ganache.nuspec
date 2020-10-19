@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ganache</id>
-    <version>2.2</version>
+    <version>2.4.0</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/ganache</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <title>Ganache</title>
@@ -17,7 +17,8 @@
     <bugTrackerUrl>https://github.com/trufflesuite/ganache/issues</bugTrackerUrl>
     <summary>Ganache is a personal blockchain for rapid Ethereum and Corda distributed application development.</summary>
     <tags>ganache admin blockchain etherium corda truffel truffelsuitefoss</tags>
-    <description><![CDATA[
+    <description><![CDATA[Ganache is a personal blockchain for rapid Ethereum and Corda distributed application development. You can use Ganache across the entire development cycle; enabling you to develop, deploy, and test your dApps in a safe and deterministic environment.
+
 ## Features
 
 * ### VISUAL MNEMONIC & ACCOUNT INFO
