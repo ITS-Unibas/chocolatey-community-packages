@@ -3,10 +3,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ganache</id>
-    <version>2.4.0</version>
+    <version>2.1</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/ganache</packageSourceUrl>
     <owners>ITS-Unibas</owners>
-    <!-- ============================== -->
     <title>Ganache</title>
     <authors>Truffle Blockchain Group</authors>
     <projectUrl>https://www.trufflesuite.com/ganache</projectUrl>
