@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ganache</id>
-    <version>2.1</version>
+    <version>2.4.0</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/ganache</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <title>Ganache</title>
@@ -17,7 +17,24 @@
     <bugTrackerUrl>https://github.com/trufflesuite/ganache/issues</bugTrackerUrl>
     <summary>Ganache is a personal blockchain for rapid Ethereum and Corda distributed application development.</summary>
     <tags>ganache admin blockchain etherium corda truffel truffelsuitefoss</tags>
-    <description><![CDATA[![screenshot](https://raw.githubusercontent.com/trufflesuite/ganache/develop/.github/images/ganache_screenshot.jpg)
+    <description><![CDATA[## Features
+
+* ### VISUAL MNEMONIC & ACCOUNT INFO
+    Quickly see the current status of all accounts, including their addresses, private keys, transactions and balances.
+
+ * ### BLOCKCHAIN LOG OUTPUT
+    See the log output of Ganache’s internal blockchain, including responses and other vital debugging information.
+
+* ### ADVANCED MINING CONTROLS
+    Configure advanced mining with a single click, setting block times to best suit your development needs.
+
+* ### BUILT-IN BLOCK EXPLORER
+    Examine all blocks and transactions to gain insight about what’s happening under the hood.
+
+* ### THE ETHEREUM BLOCKCHAIN
+    Byzantium comes standard, giving you the latest Ethereum features needed for modern dapp development.
+
+![screenshot](https://raw.githubusercontent.com/trufflesuite/ganache/develop/.github/images/ganache_screenshot.jpg)
 ]]></description>
     <releaseNotes>https://github.com/trufflesuite/ganache/releases</releaseNotes>
   </metadata>
