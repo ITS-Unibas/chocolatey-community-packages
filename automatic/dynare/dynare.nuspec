@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dynare</id>
-    <version>4.6.1</version>
+    <version>4.6.2</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/dynare</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
