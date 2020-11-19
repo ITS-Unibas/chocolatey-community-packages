@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>atlassian-companion</id>
-    <version>1.2.2</version>
+    <version>1.2.3</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/atlassian-companion</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
@@ -18,7 +18,9 @@
     <!--<bugTrackerUrl>https://confluence.atlassian.com/doc/atlassian-companion-app-release-notes-958455712.html</bugTrackerUrl>-->
     <summary>The Atlassian Companion app enables users to edit Confluence files in their preferred desktop application, then save the file back to Confluence automatically.</summary>
     <tags>atlassian-companion bitbucket atlassian git admin freeware</tags>
-    <description><![CDATA[The download and re-upload of files is managed by the Atlassian Companion app, which needs to be installed on each user's machine (not in the Confluence installation directory) to enable file editing.
+    <description><![CDATA[The Atlassian Companion app enables users to edit Confluence files in their preferred desktop application, then save the file back to Confluence automatically.
+
+The download and re-upload of files is managed by the Atlassian Companion app, which needs to be installed on each user's machine (not in the Confluence installation directory) to enable file editing.
 
 ![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/automatic/atlassian-companion/screenshot.png)
 ]]></description>
