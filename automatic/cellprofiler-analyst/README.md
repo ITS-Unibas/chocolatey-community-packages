@@ -1,4 +1,4 @@
-# [CellProfiler](https://chocolatey.org/packages/CellProfiler-Analyst)
+# [CellProfiler-Analyst](https://chocolatey.org/packages/CellProfiler-Analyst)
 
 CellProfiler Analyst (CPA) allows interactive exploration and analysis of data, particularly from high-throughput, image-based experiments. Its most popular feature is a supervised machine learning system ("Classifier") that can be trained to recognize complicated and subtle phenotypes, for automatic scoring of millions of cells. CPA provides tools for exploring and analyzing multidimensional data, particularly data from high-throughput, image-based experiments analyzed by its companion image analysis software, CellProfiler.
 
