@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn't appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cellprofiler-analyst</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/cellprofiler-analyst</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
+    <!-- ============================== -->
+    <title>CellProfiler</title>
+    <authors>Broad Institute</authors>
+    <projectUrl>https://cellprofileranalyst.org/releases</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/icons/cellprofiler-analyst.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/CellProfiler/CellProfiler-Analyst/</projectSourceUrl>
+    <docsUrl>https://cellprofileranalyst.org/manuals</docsUrl>
+    <bugTrackerUrl>https://github.com/CellProfiler/CellProfiler-Analyst/issues</bugTrackerUrl>
+    <licenseUrl>https://github.com/CellProfiler/CellProfiler-Analyst/blob/master/LICENSE</licenseUrl>
+    <summary>CellProfiler Analyst allows interactive exploration and analysis of data, particularly from high-throughput, image-based experiments. Included is a supervised machine learning system which can be trained to recognize complex and subtle phenotypes, for automatic scoring of millions of cells.</summary>
+    <tags>cellprofiler admin foss</tags>
+    <description><![CDATA[CellProfiler Analyst (CPA) allows interactive exploration and analysis of data, particularly from high-throughput, image-based experiments. Its most popular feature is a supervised machine learning system ("Classifier") that can be trained to recognize complicated and subtle phenotypes, for automatic scoring of millions of cells. CPA provides tools for exploring and analyzing multidimensional data, particularly data from high-throughput, image-based experiments analyzed by its companion image analysis software, CellProfiler.
+
+The CellProfiler project is based at the Broad Institute Imaging Platform. It was started by Anne E. Carpenter and Thouis (Ray) Jones in the laboratories of David M. Sabatini and Polina Golland at the Whitehead Institute for Biomedical Research and MIT’s CSAIL.
+
+![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@main/automatic/cellprofiler-analyst/screenshot.png)
+]]></description>
+    <releaseNotes>https://github.com/CellProfiler/CellProfiler-Analyst/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
