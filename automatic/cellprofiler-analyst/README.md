@@ -4,4 +4,6 @@ CellProfiler Analyst (CPA) allows interactive exploration and analysis of data, 
 
 The CellProfiler project is based at the Broad Institute Imaging Platform. It was started by Anne E. Carpenter and Thouis (Ray) Jones in the laboratories of David M. Sabatini and Polina Golland at the Whitehead Institute for Biomedical Research and MIT’s CSAIL.
 
-![screenshot](https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@main/automatic/cellprofiler-analyst/screenshot.png)
+<div align="center">
+  <img src="http://i.imgur.com/j12EQH5.png"><br><br>
+</div>
