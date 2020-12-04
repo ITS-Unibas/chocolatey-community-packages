@@ -7,7 +7,7 @@
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/cellprofiler-analyst</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
-    <title>CellProfiler</title>
+    <title>CellProfiler-Analyst</title>
     <authors>Broad Institute</authors>
     <projectUrl>https://cellprofileranalyst.org/releases</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/ITS-Unibas/chocolatey-community-packages@master/icons/cellprofiler-analyst.png</iconUrl>
