@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cellprofiler-analyst</id>
-    <version>2.2.1</version>
+    <version>3.0.0</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/cellprofiler-analyst</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
