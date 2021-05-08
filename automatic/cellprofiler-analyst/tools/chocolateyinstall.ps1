@@ -7,11 +7,11 @@ $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
   fileType       = 'EXE'
-  url            = 'https://cellprofiler-releases.s3.amazonaws.com/CellProfiler-Analyst-Windows-3.0.1.exe'
+  url            = 'https://cellprofiler-releases.s3.amazonaws.com/CellProfiler-Analyst-Windows-3.0.2.exe'
   silentArgs     = '/VERYSILENT /NORESTART /NOCANCEL'
   validExitCodes = @(0)
   softwareName   = 'Cellprofiler-Analyst*'
-  checksum       = '74b2fd40c8e13fbca7cf5b014091bee26d89af84391c62369ac3da7954d76007'
+  checksum       = '477a5f598695659b83d22af62dd86fa31040302d521f165a0040452d4fff6ab7'
   checksumType   = 'sha256'
 }
 
