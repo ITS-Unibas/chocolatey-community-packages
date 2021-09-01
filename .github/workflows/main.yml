@@ -54,7 +54,7 @@ jobs:
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
-          github_api_key: ${{ secrets.CHOCO_TOKEN }}
+          github_api_key: ${{ secrets.GH_TOKEN }}
 
           # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
           # Optional, leave empty to create anonymous gist
@@ -64,7 +64,7 @@ jobs:
           gist_id_test:
 
           # Chocolatey API key - to push updated packages
-          api_key: ${{ secrets.MYGET_API_KEY }}
+          api_key: ${{ secrets.CHOCO_TOKEN }}
 
           # Slack webhook URL
           #slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
