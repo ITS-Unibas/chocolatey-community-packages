@@ -19,7 +19,7 @@ function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $regex = '.msi$'
   $url = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
-  $regexVersion = 'Citavi Free(.*?)(((\d+)(\.)*)+)'
+  $regexVersion = 'Citavi (.?)(((\d+)(\.)*)+)'
   $download_page -match $regexVersion
   $version = $Matches[2]
   return @{ Version = $version; URL = $url }
