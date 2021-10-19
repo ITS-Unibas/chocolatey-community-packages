@@ -80,7 +80,7 @@ jobs:
             Update-AUPackages.md
             au_temp.zip
       - name: Send mail
-        uses: dawidd6/action-send-mail@v2
+        uses: dawidd6/action-send-mail@v3
         with:
           # mail server settings
           server_address: ${{ secrets.ADDRESS }}
