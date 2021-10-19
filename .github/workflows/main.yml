@@ -81,14 +81,14 @@ jobs:
             au_temp.zip
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
+        if: ${{ failure() }}
         with:
           # mail server settings
-          server_address: ${{ secrets.EMAIL_ADDRESS }}
-          server_port: ${{ secrets.EMAIL_PORT }}
-          secure: true
+          server_address: smtp.gmail.com
+          server_port: 463
           # user credentials
-          username: ${{ secrets.EMAIL_USERNAME_DOMAIN }}
-          password: ${{ secrets.EMAIL_PASSWORD_DOMAIN }}
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
