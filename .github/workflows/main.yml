@@ -83,8 +83,8 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           # mail server settings
-          server_address: ${{ secrets.ADDRESS }}
-          server_port: ${{ secrets.PORT }}
+          server_address: ${{ secrets.EMAIL_ADDRESS }}
+          server_port: ${{ secrets.EMAIL_PORT }}
           secure: true
           # user credentials
           username: ${{ secrets.EMAIL_USERNAME_DOMAIN }}
