@@ -80,15 +80,15 @@ jobs:
             Update-AUPackages.md
             au_temp.zip
       - name: Send mail
-        if: ${{ failure() }}
         uses: dawidd6/action-send-mail@v2
         with:
           # mail server settings
-          server_address: smtp.gmail.com
-          server_port: 465
+          server_address: ${{ secrets.ADDRESS }}
+          server_port: ${{ secrets.PORT }}
+          secure: true
           # user credentials
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
+          username: ${{ secrets.EMAIL_USERNAME_DOMAIN }}
+          password: ${{ secrets.EMAIL_PASSWORD_DOMAIN }}
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
