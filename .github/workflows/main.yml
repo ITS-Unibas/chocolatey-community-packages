@@ -81,7 +81,6 @@ jobs:
             au_temp.zip
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
-        if: ${{ failure() }}
         with:
           # mail server settings
           server_address: smtp.gmail.com
