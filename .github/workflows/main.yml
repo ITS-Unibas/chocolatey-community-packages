@@ -37,18 +37,14 @@ jobs:
           git config --global user.name $context.repository_owner
           git config --global core.safecrlf false
       - name: Install AU
+        env:
+          au_version: master
         run: |
           git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
           Install-Module Wormies-AU-Helpers -Scope CurrentUser -Force
-        env:
-          au_version: master
       - name: Check update for packages
-        run: |
-          $ErrorActionPreference = 'Continue'
-          ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
-          7z a au_temp.zip $Env:TEMP\chocolatey\au\*
         env:
           au_push: true
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
@@ -62,7 +58,13 @@ jobs:
 
           # Chocolatey API key - to push updated packages
           api_key: ${{ secrets.CHOCO_TOKEN }}
-
+        run: |
+          $ErrorActionPreference = 'Continue'
+          ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
+          7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+          git add .
+          git commit -m "updated chocolatey-community-packages"
+          git push
       - name: Send mail
         if: ${{ failure() }}
         uses: dawidd6/action-send-mail@v3
