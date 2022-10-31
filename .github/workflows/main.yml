@@ -33,7 +33,7 @@ jobs:
           github_context: ${{ toJson(github) }}
         run: |
           $context = $ENV:github_context | ConvertFrom-JSON
-          git config --global user.email ($context.repository_owner + '+github@gmail.com')
+          git config --global user.email ($context.repository_owner + '-github@gmail.com')
           git config --global user.name $context.repository_owner
           git config --global core.safecrlf false
       - name: Install AU
@@ -44,10 +44,15 @@ jobs:
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
           Install-Module Wormies-AU-Helpers -Scope CurrentUser -Force
-      - name: Check update for packages and push changes
+      - name: Check update for packages & push changes & send mail
         env:
           au_push: true
           mail-user: ${{ secrets.SWD_MAIL }}
+          mail_from: ${{ secrets.EMAIL_USERNAME }}
+          mail_server: ${{ secrets.MAIL_SERVER }}
+          mail_pass: ${{ secrets.EMAIL_PASSWORD }}
+          mail_port: 587
+          
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
@@ -63,7 +68,6 @@ jobs:
           # Renew README.md
           Remove-Item -Path .\README.md
           Rename-Item -Path .\Update-AUPackages.md -NewName README.md
-          Remove-Item -Path .\Update-AUPackages.md
           
           # Push changes
           git add .
