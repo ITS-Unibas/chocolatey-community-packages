@@ -49,11 +49,11 @@ jobs:
           $ErrorActionPreference = 'Continue'
           ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
           Write-Warning "Update-AUPackages.md:"
-          cat "$PSScriptRoot\Update-AUPackages.md"
+          cat "D:\a\chocolatey-community-packages\chocolatey-community-packages\update_info.xml\Update-AUPackages.md"
           Write-Warning "update_info.xml:"
-          cat "$PSScriptRoot\update_info.xml"
+          cat "D:\a\chocolatey-community-packages\chocolatey-community-packages\update_info.xml\update_info.xml"
           Write-Warning "Update-History.md:"
-          cat "$PSScriptRoot\Update-History.md"
+          cat "D:\a\chocolatey-community-packages\chocolatey-community-packages\update_info.xml\Update-History.md"
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
         env:
           au_push: true
