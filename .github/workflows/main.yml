@@ -47,7 +47,7 @@ jobs:
       - name: Check update for packages & push changes & send mail
         env:
           au_push: true
-          mail-user: ${{ secrets.SWD_MAIL }}
+          mail_user: ${{ secrets.SWD_MAIL }}
           mail_from: ${{ secrets.EMAIL_USERNAME }}
           mail_server: ${{ secrets.MAIL_SERVER }}
           mail_pass: ${{ secrets.EMAIL_PASSWORD }}
