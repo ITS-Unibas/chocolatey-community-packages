@@ -51,7 +51,7 @@ jobs:
           mail_from: ${{ secrets.EMAIL_USERNAME }}
           mail_server: ${{ secrets.MAIL_SERVER }}
           mail_pass: ${{ secrets.EMAIL_PASSWORD }}
-          mail_port: 587
+          mail_port: 465
           
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
           # Github token to commit pushed packages to repository
