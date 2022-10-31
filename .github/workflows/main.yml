@@ -48,12 +48,6 @@ jobs:
         run: |
           $ErrorActionPreference = 'Continue'
           ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
-          Write-Warning "Update-AUPackages.md:"
-          Get-Content "./Update-AUPackages.md"
-          Write-Warning "update_info.xml:"
-          Get-Content "./update_info.xml"
-          Write-Warning "Update-History.md:"
-          Get-Content "./Update-History.md"
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
         env:
           au_push: true
