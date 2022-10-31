@@ -68,7 +68,7 @@ jobs:
           git commit -m "updated chocolatey-community-packages"
           git push
       - name: Send E-Mail
-          uses: dawidd6/action-send-mail@v3
+          uses: dawidd6/action-send-mail@v3.7.1
           with:
           # SMTP server address
           server_address: smtp.gmail.com
