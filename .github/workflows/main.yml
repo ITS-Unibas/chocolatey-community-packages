@@ -44,7 +44,7 @@ jobs:
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
           Install-Module Wormies-AU-Helpers -Scope CurrentUser -Force
-      - name: Check update for packages
+      - name: Check update for packages and push changes
         env:
           au_push: true
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
@@ -60,8 +60,14 @@ jobs:
           api_key: ${{ secrets.CHOCO_TOKEN }}
         run: |
           $ErrorActionPreference = 'Continue'
+          # Update automatic packages
           ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
-          7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+          
+          # Renew README.md
+          Remove-Item -Path .\README.md
+          Rename-Item -Path .\Update-AUPackages.md -NewName README.md
+          
+          # Push changes
           git add .
           git commit -m "updated chocolatey-community-packages"
           git push
