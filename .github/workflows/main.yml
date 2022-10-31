@@ -49,9 +49,10 @@ jobs:
           au_push: true
           mail_user: ${{ secrets.SWD_MAIL }}
           mail_from: ${{ secrets.EMAIL_USERNAME }}
-          mail_server: ${{ secrets.MAIL_SERVER }}
+          mail_server: 'smtp.gmail.com'
           mail_pass: ${{ secrets.EMAIL_PASSWORD }}
-          mail_port: 465
+          mail_port: 587
+          enableSsl: $true
           
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
           # Github token to commit pushed packages to repository
