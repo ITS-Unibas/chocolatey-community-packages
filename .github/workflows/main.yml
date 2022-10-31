@@ -47,14 +47,11 @@ jobs:
       - name: Check update for packages and push changes
         env:
           au_push: true
+          mail-user: ${{ secrets.SWD_MAIL }}
           #au_pushurl: https://www.myget.org/F/kai2nenobu # Where to push packages
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
           github_api_key: ${{ secrets.GH_TOKEN }}
-
-          # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
-          # Optional, leave empty to create anonymous gist
-          gist_id: 7ccfa9c48ba8a91d5e70190fe1b85e0d
 
           # Chocolatey API key - to push updated packages
           api_key: ${{ secrets.CHOCO_TOKEN }}
