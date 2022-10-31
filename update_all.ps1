@@ -37,15 +37,15 @@ $Options = [ordered]@{
     NoCheckChocoVersion = $false                            #Turn on this switch for all packages
 
     Report              = @{
-        Type   = 'markdown'                                   #Report type: markdown or text
-        Path   = "$PSScriptRoot\Update-AUPackages.md"         #Path where to save the report
-        Params = @{                                          #Report parameters:
-            Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
-            NoAppVeyor      = $false                            #  Markdown: do not show AppVeyor build shield
+        Type   = 'markdown'                                     #Report type: markdown or text
+        Path   = "$PSScriptRoot\Update-AUPackages.md"           #Path where to save the report
+        Params = @{                                             #Report parameters:
+            Github_UserRepo = $Env:github_user_repo             #  Markdown: shows user info in upper right corner
+            NoAppVeyor      = $true                             #  Markdown: do not show AppVeyor build shield
             UserMessage     = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags)"       #  Markdown, Text: Custom user message to show
             NoIcons         = $false                            #  Markdown: don't show icon
             IconSize        = 32                                #  Markdown: icon size
-            Title           = ''                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
+            Title           = 'Updated chocolatey-community-packages (Unibas)'                                #  Markdown, Text: TItle of the report, by default 'Update-AUPackages'
         }
     }
 
@@ -53,12 +53,6 @@ $Options = [ordered]@{
         Lines           = 120                                         #Number of lines to show
         Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
         Path            = "$PSScriptRoot\Update-History.md"            #Path where to save history
-    }
-
-    Gist                = @{
-        Id     = $Env:gist_id                               #Your gist id; leave empty for new private or anonymous gist
-        ApiKey = $Env:github_api_key                        #Your github api key - if empty anoymous gist is created
-        Path   = "$PSScriptRoot\Update-AUPackages.md", "$PSScriptRoot\Update-History.md"       #List of files to add to the gist
     }
 
     Git                 = @{
