@@ -9,7 +9,7 @@
     <title>Ganache</title>
     <authors>Truffle Blockchain Group</authors>
     <projectUrl>https://www.trufflesuite.com/ganache</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/trufflesuite/ganache/develop/static/icons/png/128x128.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/trufflesuite/ganache-ui/develop/static/icons/png/128x128.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/trufflesuite/ganache</projectSourceUrl>
