@@ -1,7 +1,8 @@
-﻿Import-Module AU
+Import-Module AU
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $releases = 'https://www.ilastik.org/download.html'
+$matching = @('post','rc')
 
 function global:au_BeforeUpdate() {
   Get-RemoteFiles -Purge -FileNameBase 'ilastik'
@@ -21,8 +22,8 @@ function global:au_GetLatest {
   $url = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
   $arr = $url -split '-|.exe'
   $version = $arr[1]
-  if ($version -match "post") {
-    $version = $version.replace("post",".")
+  if ($version -match ($matching -join '|')) {
+    $version = $version.replace($matches[0],".")
   }
   return @{ Version = $version; URL = $url }
 }
