@@ -1,7 +1,8 @@
-﻿Import-Module AU
+Import-Module AU
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$releases = 'https://github.com/trufflesuite/ganache-ui/releases'
+$releases = 'https://api.github.com/repos/trufflesuite/ganache-ui/releases'
+$matching = 'win-setup.exe$'
 
 function global:au_BeforeUpdate() {
   Get-RemoteFiles -Purge -FileNameBase 'ganache'
@@ -16,10 +17,14 @@ function global:au_SearchReplace {
   }
 }
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $regex = '.exe$'
-  $url = $download_page.links | Where-Object {($_.href -match $regex) -and -Not ($_.href -match 'beta')} | Select-Object -First 1 -ExpandProperty href
-  $url = "https://github.com$url"
+  $Splat = @{
+      Method      = 'GET'
+      Uri         = $releases
+  }
+  $download_page = Invoke-RestMethod @Splat -ErrorAction Stop
+  $results = ($download_page | Where {$_.prerelease -eq $false})[0]
+  $url = $results.assets.browser_download_url | Where {$_ -match $matching}
+
   $arr = $url -split '-|.exe'
   $version = $arr[2]
   return @{ Version = $version; URL = $url }
