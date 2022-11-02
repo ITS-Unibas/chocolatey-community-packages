@@ -10,7 +10,7 @@
     <title>Ilastik</title>
     <authors>the ilastik developers</authors>
     <projectUrl>https://www.ilastik.org/index.html</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/ilastik/ilastik/master/ilastik-icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ilastik/ilastik/main/ilastik/ilastik-splash.png</iconUrl>
     <licenseUrl>https://www.ilastik.org/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ilastik/ilastik</projectSourceUrl>
