@@ -26,7 +26,7 @@ Various public bodies (central banks, ministries of economy and finance, interna
 ]]></description>
     <bugTrackerUrl>https://www.dynare.org/contributing/#reporting-bugs</bugTrackerUrl>
     <projectSourceUrl>https://git.dynare.org/Dynare/dynare</projectSourceUrl>
-    <mailingListUrl>https://www.dynare.org/cgi-bin/mailman/listinfo/info</mailingListUrl>
+    <mailingListUrl>https://forum.dynare.org/</mailingListUrl>
     <docsUrl>https://www.dynare.org/manual/</docsUrl>
     <releaseNotes>https://www.dynare.org/tags/release-notes/</releaseNotes>
   </metadata>
