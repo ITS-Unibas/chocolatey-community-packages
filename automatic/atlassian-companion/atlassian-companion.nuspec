@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>atlassian-companion</id>
-    <version>1.4.4</version>
+    <version>1.4.5</version>
     <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/atlassian-companion</packageSourceUrl>
     <owners>ITS-Unibas</owners>
     <!-- ============================== -->
