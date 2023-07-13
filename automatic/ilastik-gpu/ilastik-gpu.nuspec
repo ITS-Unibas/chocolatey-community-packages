@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ilastik-gpu</id>
+    <version>1.4.0</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/ilastik-gpu</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
+    <!-- ============================== -->
+    <title>Ilastik-GPU</title>
+    <authors>the ilastik developers</authors>
+    <projectUrl>https://www.ilastik.org/index.html</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ilastik/ilastik/main/ilastik/ilastik-splash.png</iconUrl>
+    <licenseUrl>https://www.ilastik.org/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ilastik/ilastik</projectSourceUrl>
+    <docsUrl>https://www.ilastik.org/documentation/index.html</docsUrl>
+    <bugTrackerUrl>https://github.com/ilastik/ilastik/issues</bugTrackerUrl>
+    <summary>The interactive learning and segmentation toolkit</summary>
+    <tags>ilastik admin maschine-learning learning segmentation classification analysis</tags>
+    <description><![CDATA[ilastik is a simple, user-friendly tool for interactive image classification, segmentation and analysis. It is built as a modular software framework, which currently has workflows for automated (supervised) pixel- and object-level classification, automated and semi-automated object tracking, semi-automated segmentation and object counting without detection. Most analysis operations are performed lazily, which enables targeted interactive processing of data subvolumes, followed by complete volume analysis in offline batch mode. Using it requires no experience in image processing.
+
+![screenshot](https://raw.githubusercontent.com/ilastik/ilastik/master/docs/ilastik/images/ilastik-shell.png)
+]]></description>
+    <releaseNotes>https://github.com/ilastik/ilastik/wiki/Release-Notes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
