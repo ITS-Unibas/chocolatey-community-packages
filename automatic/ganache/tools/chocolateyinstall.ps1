@@ -8,10 +8,10 @@ $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
   fileType       = 'EXE'
-  url64bit       = 'https://github.com/trufflesuite/ganache-ui/releases/download/v2.5.4/Ganache-2.5.4-win-setup.exe'
+  url64bit       = 'https://github.com/trufflesuite/ganache-ui/releases/download/v2.7.1/Ganache-2.7.1-win-x64-setup.exe'
   silentArgs     = '/S /ALLUSERS=1'
   softwareName   = 'Ganache*'
-  checksum64     = 'b7e4ec85691aabcc57156c15dddbb0ecba46a71e5507cb6ac673cf04874e9748'
+  checksum64     = 'f0b3e398e3e910cb27762a23a4ba0f6e998d3ce2d2ccbeccea42e54849273571'
   checksumType64 = 'sha256'
 }
 
