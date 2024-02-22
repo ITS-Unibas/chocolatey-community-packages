@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>chimerax</id>
+    <version>1.7.1</version>
+    <packageSourceUrl>https://github.com/ITS-Unibas/chocolatey-community-packages/tree/master/automatic/chimerax</packageSourceUrl>
+    <owners>ITS-Unibas</owners>
+    <title>UCSF ChimeraX</title>
+    <authors>UCSF Resource for Biocomputing, Visualization, and Informatics</authors>
+    <projectUrl>https://www.cgl.ucsf.edu/chimerax/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ITS-Unibas/chocolatey-community-packages/master/icons/chimerax.png</iconUrl>
+    <copyright>© Regents of the University of California, 2016-2023</copyright>
+    <licenseUrl>http://www.cgl.ucsf.edu/chimerax/license.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/RBVI/ChimeraX</projectSourceUrl>
+    <docsUrl>https://www.rbvi.ucsf.edu/chimerax/docs/index.html</docsUrl>
+    <mailingListUrl>https://mail.cgl.ucsf.edu/mailman/mailman3/lists/chimerax-users.cgl.ucsf.edu/</mailingListUrl>
+    <bugTrackerUrl>https://www.rbvi.ucsf.edu/trac/ChimeraX/report</bugTrackerUrl>
+    <tags>chimerax chemistry molecular modeling python admin</tags>
+    <summary>UCSF ChimeraX (or simply ChimeraX) is the next-generation molecular visualization program from the Resource for Biocomputing, Visualization, and Informatics (RBVI), following UCSF Chimera</summary>
+    <description>ChimeraX provides several advantages relative to Chimera, and the list will continue to grow. A small sample is given below. See also: feature highlights, example images, missing features
+
+High-performance rendering of large structures and data
+
+Fast mmCIF reader and ability to write mmCIF
+
+Fast and robust solvent-excluded surfaces
+
+Interactive ambient-occlusion lighting
+
+Curved-cylinder “tube” helices integrated with cartoons
+    </description>
+    <releaseNotes>https://www.rbvi.ucsf.edu/trac/ChimeraX/wiki/ChangeLog</releaseNotes>
+  </metadata>
+    <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
