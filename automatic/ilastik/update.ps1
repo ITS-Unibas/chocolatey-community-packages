@@ -23,7 +23,7 @@ function global:au_GetLatest {
   $arr = $url -split '-|.exe'
   $version = $arr[1]
   if ($version -match ($matching -join '|')) {
-    $version = $version.replace($matches[0],".")
+    $version = $version.replace($matches[0],"")
   }
   return @{ Version = $version; URL = $url }
 }
