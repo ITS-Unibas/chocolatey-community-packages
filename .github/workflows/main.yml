@@ -40,8 +40,8 @@ jobs:
         env:
           au_version: master
         run: |
-          git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
-          . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+          git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/chocolatey-au
+          . "$Env:TEMP/chocolatey-au/scripts/Install-AU.ps1" $Env:au_version
           Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
           Install-Module Wormies-AU-Helpers -Scope CurrentUser -Force
       - name: Check update for packages & push changes
