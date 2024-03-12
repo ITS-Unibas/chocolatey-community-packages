@@ -1,4 +1,4 @@
-import-module au
+Import-Module chocolatey-au
 
 function global:au_GetLatest {
     $BaseURL = 'https://www.cgl.ucsf.edu'
