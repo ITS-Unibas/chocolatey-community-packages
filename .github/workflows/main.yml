@@ -38,7 +38,7 @@ jobs:
           git config --global core.safecrlf false
       - name: Install AU
         env:
-          au_version: legacy
+          au_version: master
         run: |
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/chocolatey-au
           . "$Env:TEMP/chocolatey-au/scripts/Install-AU.ps1" $Env:au_version
