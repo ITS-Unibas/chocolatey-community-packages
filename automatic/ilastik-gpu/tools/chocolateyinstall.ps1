@@ -7,11 +7,11 @@ $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
   fileType       = 'EXE'
-  url64bit       = 'https://files.ilastik.org/ilastik-1.4.0.post1-gpu-win64.exe'
+  url64bit       = 'https://files.ilastik.org/ilastik-1.4.1rc2-gpu-win64.exe'
   silentArgs     = '/VERYSILENT /NORESTART /NOCANCEL'
   validExitCodes = @(0)
   softwareName   = 'ilastik*'
-  checksum64     = 'eb948f5207e8324452d4b142a6dec5b9dbc93eb6ef28e681cb73dbb49b0a5f3d'
+  checksum64     = '506109e7ec7570aa0f5b43698b03cfd3edac3bb28a47a432e258ec739052b77c'
   checksumType64 = 'sha256'
 }
 
