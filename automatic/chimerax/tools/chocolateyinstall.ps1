@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$AppVersion = '1.10.1'
+$AppVersion = '1.11'
 $AppVersionShort = $AppVersion -replace '.\d$'
 
 $BaseURL = 'https://www.cgl.ucsf.edu'
