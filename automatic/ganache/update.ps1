@@ -32,7 +32,7 @@ function global:au_GetLatest {
   $url = $results.assets.browser_download_url | Where-Object {$_ -match $matching}
 
   $arr = $url -split '-|.exe'
-  $version = $arr[2]
+  $version = $arr[3]
   return @{ Version = $version; URL = $url }
 }
 
