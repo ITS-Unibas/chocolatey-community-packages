@@ -4,7 +4,7 @@ function global:au_GetLatest {
     $BaseURL = 'https://www.cgl.ucsf.edu'
     $chimeraXPage = $BaseURL + '/chimerax/data/release-info/production.json'
 
-    $downloadPage = Invoke-WebRequest -Uri $chimeraXPage
+    $downloadPage = Invoke-WebRequest -Uri $chimeraXPage -UseBasicParsing
     $json = $downloadPage.Content | ConvertFrom-Json
     $version = $json.windows.version
     $link = $json.windows.link
@@ -16,7 +16,7 @@ function global:au_GetLatest {
         'file'   = $link 
     }
 
-    $result = Invoke-WebRequest $URI -body $body -Method Post
+    $result = Invoke-WebRequest $URI -body $body -Method Post -UseBasicParsing
 
     $url64 = $BaseURL + ($result.links | Select-Object -ExpandProperty href)
 
