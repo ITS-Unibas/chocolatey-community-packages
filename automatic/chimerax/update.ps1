@@ -14,7 +14,7 @@ function global:au_GetLatest {
 	
 	$intermediate = Invoke-WebRequest $URI -UseBasicParsing
 
-    $intermediate.Links | where {$_.href -match ('/.*chimerax-get.py.*' + $filename)}
+    $result = $intermediate.Links | where {$_.href -match ('/.*chimerax-get.py.*' + $filename)}
 
     $url64 = ($BaseURL + $result.href)
 
