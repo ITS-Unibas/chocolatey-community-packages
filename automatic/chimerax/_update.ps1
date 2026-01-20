@@ -25,12 +25,13 @@ function global:au_GetLatest {
 }
 
 function global:au_SearchReplace {
-    @{
-        "tools\chocolateyInstall.ps1" = @{
-            "(^[$]AppVersion = )('.*')"      = "`$1'$($Latest.Version)'"
-            "(^\s*Checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-        }
+  @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(?i)(^\s*url64\s*=\s*)('.*')"      = "`$1`'$($Latest.URL64)`'"
+      "(?i)(^\s*checksum64\s*=\s*)('.*')" = "`$1`'$($Latest.Checksum64)`'"
     }
+  }
 }
+
 
 update -ChecksumFor 64
