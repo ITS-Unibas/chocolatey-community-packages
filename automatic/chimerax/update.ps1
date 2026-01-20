@@ -8,21 +8,19 @@ function global:au_GetLatest {
     $json = $downloadPage.Content | ConvertFrom-Json
     $version = $json.windows.version
     $link = $json.windows.link
+	$filename = ($link -split "/")[-1]
 
-    $URI = $BaseURL + '/chimerax/cgi-bin/secure/chimerax-get.py'
-   
-    $body = @{
-        'choice' = 'Accept'
-        'file'   = $link 
-    }
+    $URI = $BaseURL + '/chimerax/cgi-bin/secure/chimerax-get.py?file=' + $link + '&choice=Accept'
+	
+	$intermediate = Invoke-WebRequest $URI -UseBasicParsing
 
-    $result = Invoke-WebRequest $URI -body $body -Method Post -UseBasicParsing
+    $intermediate.Links | where {$_.href -match ('/.*chimerax-get.py.*' + $filename)}
 
-    $url64 = $BaseURL + ($result.links | Select-Object -ExpandProperty href)
+    $url64 = ($BaseURL + $result.href)
 
     return @{ 
         Version = $version
-        URL64 = $url64 -replace '&amp;','&'
+        URL64 = $url64
     }
 }
 
