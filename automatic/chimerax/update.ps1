@@ -16,11 +16,11 @@ function global:au_GetLatest {
 
     $result = $intermediate.Links | where {$_.href -match ('/.*chimerax-get.py.*' + $filename)}
 
-    $url64 = ($BaseURL + $result.href)
+    $url = ($BaseURL + $result.href)
 
     return @{ 
         Version = $version
-        URL64 = $url64
+        URL = $url
     }
 }
 
@@ -33,4 +33,4 @@ function global:au_SearchReplace {
     }
 }
 
-update -ChecksumFor 64
+update -ChecksumFor none
