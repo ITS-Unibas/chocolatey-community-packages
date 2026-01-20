@@ -20,7 +20,7 @@ function global:au_GetLatest {
 
     return @{ 
         Version = $version
-        URL = $url
+        URL64 = $url
     }
 }
 
@@ -33,4 +33,4 @@ function global:au_SearchReplace {
     }
 }
 
-update -ChecksumFor none
+update -ChecksumFor 64
