@@ -1,7 +1,9 @@
-﻿Import-Module chocolatey-au
+Import-Module chocolatey-au
+
+# update script disabled weil wir die choco community edition nutzen
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$releases = 'https://flow.polar.com/start'
+$releases = 'https://support.polar.com/en/updates/polar-flowsync-version-4-for-windows-and-mac'
 
 function global:au_BeforeUpdate() {
   Get-RemoteFiles -Purge -FileNameBase 'polar-flowsync'
@@ -18,14 +20,13 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $download_page -match 'FlowSync_(\d+\.\d+\.\d+\.\d+)' | Out-Null
-  $version = $Matches[1]
+  $download_page.Content -match "Version number: (\d+\.\d+\.\d+)" | Out-Null
+  #https://flowsync.flow.polar.com/app/FlowSync_installer-4.0.11-x86-x64.exe
+  $version = $Matches[0] -replace '.*:\s*', ''
 
-
-  $regex = '.msi$'
-  $url = "https://flowsync.cdn.polar.com/connect/download/FlowSync_$($version).exe"
+  $url = "https://flowsync.flow.polar.com/app/FlowSync_installer-$($version)-x86-x64.exe"
 
   return @{ Version = $version; URL = $url }
 }
 
-update -ChecksumFor none
+update -ChecksumFor all -NoCheckChocoVersion
