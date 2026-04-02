@@ -7,11 +7,11 @@ $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
   fileType       = 'EXE'
-  url64bit       = 'https://files.ilastik.org/ilastik-1.4.1rc2-win64.exe'
+  url64bit       = 'https://files.ilastik.org/ilastik-1.4.2rc1-win64.exe'
   silentArgs     = '/VERYSILENT /NORESTART /NOCANCEL'
   validExitCodes = @(0)
   softwareName   = 'ilastik*'
-  checksum64     = '4b492588fb001ac61c783b39645d754db86f4f756441ab3ea2bd02b0fb84195f'
+  checksum64     = '355b72e7d367715d4c583b7964a59b5d93fee12b528d8e9bd0ae4d0095fcaabc'
   checksumType64 = 'sha256'
 }
 
