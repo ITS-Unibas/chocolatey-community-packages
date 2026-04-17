@@ -14,7 +14,7 @@ $packageArgs = @{
   validExitCodes = @(0, 3010, 1641)
   #OTHERS
   softwareName   = 'atlassian-companion*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
-  checksum       = '5696185bd099d635b1e32a5b6e56139b92e8b7dcbefaee7f33349ff6e9e1a9ac'
+  checksum       = '0f35cd8cbc01dd07554aa93ee0666e6c4f7a1afdddf83567c2a778589d962a9e'
   checksumType   = 'sha256' #default is md5, can also be sha1
 }
 
